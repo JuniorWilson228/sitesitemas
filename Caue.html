@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Anibal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a7fd9b;
+        }
+        nav {
+            background-color: #3CB371;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            color: rgb(251, 255, 0);
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #fffb00;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffff00;
+        }
+        .section img {
+            width: 20%;
+            margin: 1%;
+            border-radius: 10px;
+           
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        #fundamental {
+            background: url('https://br.images.search.yahoo.com/images/view;_ylt=AwriglBvenBm5MAeqBH16Qt.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2E3MGU0Yjk1NGM3MWU5NGVmZTJmMGFkOTU1ZmJmMzY0BGdwb3MDMjEEaXQDYmluZw--?back=https%3A%2F%2Fbr.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dfotos%2Beduca%25C3%25A7ao%2Bfundo%26ei%3DUTF-8%26type%3DE210BR91199G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D21&w=1920&h=1000&imgurl=ascenty.com%2Fwp-content%2Fuploads%2F2022%2F04%2Ftecnologia-na-educa%25C3%25A7%25C3%25A3o-1920x1000-c-default.png&rurl=https%3A%2F%2Fascenty.com%2Fblog%2Fartigos%2Ftecnologia-na-educacao%2F&size=1101.6KB&p=fotos+educa%C3%A7ao+fundo&oid=a70e4b954c71e94efe2f0ad955fbf364&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=7+motivos+para+se+adotar+a+tecnologia+na+educa%C3%A7%C3%A3o+-+Ascenty&b=0&ni=140&no=21&ts=&tab=organic&sigr=iVrc6cS5.k2s&sigb=rCl7D5witM2F&sigi=pSBcblYBcddc&sigt=lLBS.GZiT31P&.crumb=o1/Sbk8Fs4n&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210BR91199G0') no-repeat center center;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+        }
+        #Destaques {
+            background: url('https://br.images.search.yahoo.com/images/view;_ylt=AwriglBvenBm5MAeqBH16Qt.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2E3MGU0Yjk1NGM3MWU5NGVmZTJmMGFkOTU1ZmJmMzY0BGdwb3MDMjEEaXQDYmluZw--?back=https%3A%2F%2Fbr.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dfotos%2Beduca%25C3%25A7ao%2Bfundo%26ei%3DUTF-8%26type%3DE210BR91199G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D21&w=1920&h=1000&imgurl=ascenty.com%2Fwp-content%2Fuploads%2F2022%2F04%2Ftecnologia-na-educa%25C3%25A7%25C3%25A3o-1920x1000-c-default.png&rurl=https%3A%2F%2Fascenty.com%2Fblog%2Fartigos%2Ftecnologia-na-educacao%2F&size=1101.6KB&p=fotos+educa%C3%A7ao+fundo&oid=a70e4b954c71e94efe2f0ad955fbf364&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=7+motivos+para+se+adotar+a+tecnologia+na+educa%C3%A7%C3%A3o+-+Ascenty&b=0&ni=140&no=21&ts=&tab=organic&sigr=iVrc6cS5.k2s&sigb=rCl7D5witM2F&sigi=pSBcblYBcddc&sigt=lLBS.GZiT31P&.crumb=o1/Sbk8Fs4n&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210BR91199G0') no-repeat center center;
+            background-size: cover;
+            color: rgb(3, 3, 3);
+        }
+        #periodos {
+            background: url('https://br.images.search.yahoo.com/images/view;_ylt=AwriglBvenBm5MAeqBH16Qt.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2E3MGU0Yjk1NGM3MWU5NGVmZTJmMGFkOTU1ZmJmMzY0BGdwb3MDMjEEaXQDYmluZw--?back=https%3A%2F%2Fbr.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dfotos%2Beduca%25C3%25A7ao%2Bfundo%26ei%3DUTF-8%26type%3DE210BR91199G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D21&w=1920&h=1000&imgurl=ascenty.com%2Fwp-content%2Fuploads%2F2022%2F04%2Ftecnologia-na-educa%25C3%25A7%25C3%25A3o-1920x1000-c-default.png&rurl=https%3A%2F%2Fascenty.com%2Fblog%2Fartigos%2Ftecnologia-na-educacao%2F&size=1101.6KB&p=fotos+educa%C3%A7ao+fundo&oid=a70e4b954c71e94efe2f0ad955fbf364&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=7+motivos+para+se+adotar+a+tecnologia+na+educa%C3%A7%C3%A3o+-+Ascenty&b=0&ni=140&no=21&ts=&tab=organic&sigr=iVrc6cS5.k2s&sigb=rCl7D5witM2F&sigi=pSBcblYBcddc&sigt=lLBS.GZiT31P&.crumb=o1/Sbk8Fs4n&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210BR91199G0=') no-repeat center center;
+            background-size: cover;
+            color: srgb(255, 217, 0);
+        }
+        #notas {
+            background: url('https://br.images.search.yahoo.com/images/view;_ylt=AwriglBvenBm5MAeqBH16Qt.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2E3MGU0Yjk1NGM3MWU5NGVmZTJmMGFkOTU1ZmJmMzY0BGdwb3MDMjEEaXQDYmluZw--?back=https%3A%2F%2Fbr.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dfotos%2Beduca%25C3%25A7ao%2Bfundo%26ei%3DUTF-8%26type%3DE210BR91199G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D21&w=1920&h=1000&imgurl=ascenty.com%2Fwp-content%2Fuploads%2F2022%2F04%2Ftecnologia-na-educa%25C3%25A7%25C3%25A3o-1920x1000-c-default.png&rurl=https%3A%2F%2Fascenty.com%2Fblog%2Fartigos%2Ftecnologia-na-educacao%2F&size=1101.6KB&p=fotos+educa%C3%A7ao+fundo&oid=a70e4b954c71e94efe2f0ad955fbf364&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=7+motivos+para+se+adotar+a+tecnologia+na+educa%C3%A7%C3%A3o+-+Ascenty&b=0&ni=140&no=21&ts=&tab=organic&sigr=iVrc6cS5.k2s&sigb=rCl7D5witM2F&sigi=pSBcblYBcddc&sigt=lLBS.GZiT31P&.crumb=o1/Sbk8Fs4n&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210BR91199G0=') no-repeat center center;
+            background-size: cover;
+            color: rgb(255, 217, 0);
+        }
+        .overlay {
+            background: rgba(255, 238, 0, 0.849);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#fundamental">Ensino Fundamental</a></li>
+            <li><a href="#Destaques">Destaques</a></li>
+            <li><a href="#Notas">Notas</a></li>
+            <li><a href="#Periodos">Periodos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Bem-vindo à Escola Anibal </h1>
+
+        <div id="fundamental" class="section">
+            <div class="overlay">
+                <h2>#Ensino Fundamental</h2>
+                <p>
+                    O Ensino Fundamental na Escola Anibal proporciona uma base sólida para o desenvolvimento acadêmico e pessoal dos alunos. Nossos professores são altamente qualificados e utilizam metodologias modernas para engajar os estudantes em um ambiente de aprendizado estimulante.
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bff8c292525537.5e4d604253b8d.png" alt="Sala  do Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b3acfb148258409.62d215d854325.png" alt="Alunos do Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c0836d92525537.5e4d604253701.png" alt="Atividades no Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef8f2f92525537.5e6d705032d69.png" alt="Projetos no Ensino Fundamental">
+            </div>
+        </div>
+
+        <div id="medio" class="section">
+            <div class="overlay">
+                <h2>#Ensino De Qualidade</h2>
+                <p>
+                    No Ensino Médio, os alunos da Escola Anibal são preparados para os desafios do vestibular e da vida universitária. Oferecemos uma ampla gama de disciplinas, além de orientação vocacional e apoio para o desenvolvimento de projetos de pesquisa.
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/72c39092525537.5e4d604251c91.png" alt="Sala de aula do Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/54b30692525537.5e4d604252717.png" alt="Alunos do Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c56446148258409.62d22232c9ee5.png" alt="Atividades no Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c2406d92525537.5f67e64d512d6.png" alt="Projetos no Ensino Médio">
+            </div>
+        </div>
+
+        <div id="extracurriculares" class="section">
+            <div class="overlay">
+                <h2>#Atividades</h2>
+                <p>
+                    As atividades extracurriculares na Escola anibal são diversas e abrangem áreas como esportes, artes, música e tecnologia. Estas atividades são essenciais para o desenvolvimento integral dos alunos, promovendo habilidades sociais e culturais.
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d6467148026769.62d1ca6f2cc02.png" alt="Aula de música">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/98f94992525537.5f67e64e82843.png" alt="Esportes">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f82a9a148026769.62d1ca6f2e62d.png" alt="Clube de robótica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6ce60a92525537.5e4d6042531f9.png" alt="Aula de artes">
+            </div>
+        </div>
+
+        <div id="apoio" class="section">
+            <div class="overlay">
+                <h2>#robótica</h2>
+                <p>
+                    A Escola oferece o Ensino Na Area de Roubotica.
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/df6fd7148258409.62d215d8c13a3.png" alt="Orientação psicológica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d31101148258409.62d215d8c19de.png" alt="Tutoria acadêmica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e7451148258409.62d215d8c0ec3.png" alt="Programas de inclusão">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/425c6892525537.5e6d704f6fd2b.png" alt="Apoio ao estudante">
+          
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bff8c292525537.5e4d604253b8d.png" alt="Sala  do Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b3acfb148258409.62d215d854325.png" alt="Alunos do Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c0836d92525537.5e4d604253701.png" alt="Atividades no Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef8f2f92525537.5e6d705032d69.png" alt="Projetos no Ensino Fundamental">
+            </div>
+        </div>
+
+        <div id="medio" class="section">
+            <div class="overlay">
+                <h2>#Destaques</h2>
+                <p>
+                    #alunos Destaques 
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/72c39092525537.5e4d604251c91.png" alt="Sala de aula do Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/54b30692525537.5e4d604252717.png" alt="Alunos do Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c56446148258409.62d22232c9ee5.png" alt="Atividades no Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c2406d92525537.5f67e64d512d6.png" alt="Projetos no Ensino Médio">
+            </div>
+        </div>
+
+        <div id="extracurriculares" class="section">
+            <div class="overlay">
+                <h2>Avaliaçoes</h2>
+                <p>
+                    #NOTAS DO PERIODO
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d6467148026769.62d1ca6f2cc02.png" alt="Aula de música">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/98f94992525537.5f67e64e82843.png" alt="Esportes">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f82a9a148026769.62d1ca6f2e62d.png" alt="Clube de robótica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6ce60a92525537.5e4d6042531f9.png" alt="Aula de artes">
+            </div>
+        </div>
+
+        <div id="apoio" class="section">
+            <div class="overlay">
+                <h2>#MEDIA DOS ANOS ANTERIORES</h2>
+                <p>
+                    SUA MEDIA NAS ESCOLAS ANTIGAS.
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/df6fd7148258409.62d215d8c13a3.png" alt="Orientação psicológica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d31101148258409.62d215d8c19de.png" alt="Tutoria acadêmica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e7451148258409.62d215d8c0ec3.png" alt="Programas de inclusão">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/425c6892525537.5e6d704f6fd2b.png" alt="Apoio ao estudante">
+            
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bff8c292525537.5e4d604253b8d.png" alt="Sala  do Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b3acfb148258409.62d215d854325.png" alt="Alunos do Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c0836d92525537.5e4d604253701.png" alt="Atividades no Ensino Fundamental">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef8f2f92525537.5e6d705032d69.png" alt="Projetos no Ensino Fundamental">
+            </div>
+        </div>
+
+        <div id="medio" class="section">
+            <div class="overlay">
+                <h2>#whatsaap</h2>
+                <p>
+                    No Ensino Médio, os alunos da Escola Anibal são preparados para os desafios do vestibular e da vida universitária. Oferecemos uma ampla gama de disciplinas, além de orientação vocacional e apoio para o desenvolvimento de projetos de pesquisa.
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/72c39092525537.5e4d604251c91.png" alt="Sala de aula do Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/54b30692525537.5e4d604252717.png" alt="Alunos do Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c56446148258409.62d22232c9ee5.png" alt="Atividades no Ensino Médio">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c2406d92525537.5f67e64d512d6.png" alt="Projetos no Ensino Médio">
+            </div>
+        </div>
+
+        <div id="extracurriculares" class="section">
+            <div class="overlay">
+                <h2>Chat Online</h2>
+                <p>
+                    Chat Online Serviço de Ajuda Online
+              </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d6467148026769.62d1ca6f2cc02.png" alt="Aula de música">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/98f94992525537.5f67e64e82843.png" alt="Esportes">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f82a9a148026769.62d1ca6f2e62d.png" alt="Clube de robótica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6ce60a92525537.5e4d6042531f9.png" alt="Aula de artes">
+            </div>
+        </div>
+
+        <div id="apoio" class="section">
+            <div class="overlay">
+                <h2>#Monitoramento</h2>
+                <p>
+                    A Escola Anibal oferece diversos serviços de Seguraça Incluido o Videomonitoramento
+                </p>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/df6fd7148258409.62d215d8c13a3.png" alt="Orientação psicológica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d31101148258409.62d215d8c19de.png" alt="Tutoria acadêmica">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e7451148258409.62d215d8c0ec3.png" alt="Programas de inclusão">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/425c6892525537.5e6d704f6fd2b.png" alt="Apoio ao estudante">
+            
+          
+            </div>
+        </div>
+    </div>
+</body>
+</html>

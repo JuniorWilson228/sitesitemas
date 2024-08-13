@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Seja bem vindo a JB Tem </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366; /* Azul Escuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f8f8f8; /* Azul Médio */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #003366;
+            text-align: center;
+            padding: 08px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Azul Claro */
+        }
+
+        .banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            background-color: #003366; /* Azul Escuro */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #9acef8; /* Azul Médio */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #003366; /* Azul Escuro */
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            border-color: #004080; /* Azul Médio */
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #003366; /* Azul Escuro */
+        }
+
+        .product p {
+            margin: 0 0 10px;
+            font-size: 0.9em;
+        }
+
+        .product .price {
+            color: #004080; /* Azul Médio */
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .product a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #004080; /* Azul Médio */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .product a:hover {
+            text-decoration: underline;
+            color: #0056b3; /* Azul Claro */
+        }
+
+        footer {
+            background-color: #003366; /* Azul Escuro */
+            color: ;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer .footer-container div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        footer h4 {
+            border-bottom: 2px solid #004080; /* Azul Médio */
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        footer p, footer a {
+            font-size: 0.9em;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #0056b3; /* Azul Claro */
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>JB Tem</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="eletronicos.html">Eletrônicos</a>
+    <a href="roupas.html">Roupas</a>
+    <a href="moveis.html">Móveis</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="banner">
+    Grandes Ofertas do Mês!
+</div>
+
+<div class="container">
+    <section class="section" id="eletronicos">
+        <h2>Eletrônicos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="eletronico1.jpg" alt="Produto Eletrônico 1">
+                <h3>Smartphone XYZ</h3>
+                <p>Último modelo com câmera avançada.</p>
+                <p class="price">R$ 2.500,00</p>
+                <a href="ruan2.html">Ver Detalhes</a>
+            </div>
+            <div class="product">
+                <img src="eletronico2.jpg" alt="Produto Eletrônico 2">
+                <h3>Notebook ABC</h3>
+                <p>Alto desempenho para todas as suas tarefas.</p>
+                <p class="price">R$ 4.000,00</p>
+                <a href="produto-eletronico2.html">Ver Detalhes</a>
+            </div>
+            <div class="product">
+                <img src="eletronico3.jpg" alt="Produto Eletrônico 3">
+                <h3>Fone de Ouvido Wireless</h3>
+                <p>Som de qualidade com cancelamento de ruído.</p>
+                <p class="price">R$ 500,00</p>
+                <a href="produto-eletronico3.html">Ver Detalhes</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="roupas">
+        <h2>Roupas</h2>
+        <div class="products">
+            <div class="product">
+                <img src="roupa1.jpg" alt="Produto Roupa 1">
+                <h3>Camiseta Básica</h3>
+                <p>Conforto e estilo para o dia a dia.</p>
+                <p class="price">R$ 50,00</p>
+                <a href="produto-roupa1.html">Ver Detalhes</a>
+            </div>
+            <div class="product">
+                <img src="roupa2.jpg" alt="Produto Roupa 2">
+                <h3>Calça Jeans</h3>
+                <p>Modelagem perfeita e tecido resistente.</p>
+                <p class="price">R$ 120,00</p>
+                <a href="produto-roupa2.html">Ver Detalhes</a>
+            </div>
+            <div class="product">
+                <img src="roupa3.jpg" alt="Produto Roupa 3">
+                <h3>Jaqueta de Couro</h3>
+                <p>Estilo e sofisticação para todas as ocasiões.</p>
+                <p class="price">R$ 300,00</p>
+                <a href="produto-roupa3.html">Ver Detalhes</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="moveis">
+        <h2>Móveis</h2>
+        <div class="products">
+            <div class="product">
+                <img src="movel1.jpg" alt="Produto Móvel 1">
+                <h3>Sofá 3 Lugares</h3>
+                <p>Conforto e elegância para sua sala.</p>
+                <p class="price">R$ 2.000,00</p>
+                <a href="produto-movel1.html">Ver Detalhes</a>
+            </div>
+            <div class="product">
+                <img src="movel2.jpg" alt="Produto Móvel 2">
+                <h3>Estante de Madeira</h3>
+                <p>Organize seus livros com estilo.</p>
+                <p class="price">R$ 1.200,00</p>
+                <a href="produto-movel2.html">Ver Detalhes</a>
+            </div>
+            <div class="product">
+                <img src="movel3.jpg" alt="Produto Móvel 3">
+                <h3>Mesa de Jantar</h3>
+                <p>Espaço para toda a família.</p>
+                <p class="price">R$ 1.500,00</p>
+                <a href="produto-movel3.html">Ver Detalhes</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4>Minha Loja</h4>
+            <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+        </div>
+        <div>
+            <h4>Links Úteis</h4>
+            <p><a href="#home">Home</a></p>
+            <p><a href="pag2">Eletrônicos</a></p>
+            <p><a href="#roupas">Roupas</a></p>
+            <p><a href="#moveis">Móveis</a></p>
+        </div>
+        <div>
+            <h4>Redes Sociais</h4>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Twitter</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônicos </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366; /* Azul Escuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #004080; /* Azul Médio */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Azul Claro */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            border-bottom: 2px solid #004080; /* Azul Médio */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #003366; /* Azul Escuro */
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            border-color: #004080; /* Azul Médio */
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #003366; /* Azul Escuro */
+        }
+
+        .product p {
+            margin: 0 0 10px;
+            font-size: 0.9em;
+        }
+
+        .product .price {
+            color: #004080; /* Azul Médio */
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .product a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #004080; /* Azul Médio */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .product a:hover {
+            text-decoration: underline;
+            color: #0056b3; /* Azul Claro */
+        }
+
+        footer {
+            background-color: #003366; /* Azul Escuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer .footer-container div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        footer h4 {
+            border-bottom: 2px solid #004080; /* Azul Médio */
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        footer p, footer a {
+            font-size: 0.9em;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #0056b3; /* Azul Claro */
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Eletrônicos</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="eletronicos.html">Eletrônicos</a>
+    <a href="roupas.html">Roupas</a>
+    <a href="moveis.html">Móveis</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="container">
+    <h1>Eletrônicos</h1>
+    <div class="products">
+        <div class="product">
+            <img src="eletronico1.jpg" alt="Smartphone XYZ">
+            <h3>Smartphone XYZ</h3>
+            <p>Último modelo com câmera avançada.</p>
+            <p class="price">R$ 2.500,00</p>
+            <a href="produto-eletronico1.html">Ver Detalhes</a>
+        </div>
+        <div class="product">
+            <img src="eletronico2.jpg" alt="Notebook ABC">
+            <h3>Notebook ABC</h3>
+            <p>Alto desempenho para todas as suas tarefas.</p>
+            <p class="price">R$ 4.000,00</p>
+            <a href="produto-eletronico2.html">Ver Detalhes</a>
+        </div>
+        <div class="product">
+            <img src="eletronico3.jpg" alt="Fone de Ouvido Wireless">
+            <h3>Fone de Ouvido Wireless</h3>
+            <p>Som de qualidade com cancelamento de ruído.</p>
+            <p class="price">R$ 500,00</p>
+            <a href="produto-eletronico3.html">Ver Detalhes</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4>JB Tem</h4>
+            <p>&copy; 2024 JB Tem. Todos os direitos reservados.</p>
+        </div>
+        <div>
+            <h4>Links Úteis</h4>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="eletronicos.html">Eletrônicos</a></p>
+            <p><a href="roupas.html">Roupas</a></p>
+            <p><a href="moveis.html">Móveis</a></p>
+        </div>
+        <div>
+            <h4>Redes Sociais</h4>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Twitter</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
